@@ -2,6 +2,45 @@ import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
 
+const knowlegde_content = [
+  {
+    title: "Science (Khoa học)",
+    content: [
+        "Tìm hiểu về các chủ đề ứng dụng trong thế giới số như: Streamer, Livestreaming, Youtube",
+        "Mã Morse, FBI, Kỹ sư bảo mật phần mềm, Virus trong thế giới số, và Bản quyền trong thời đại số"
+    ]
+
+  },
+    {
+    title: "Technology (Công nghệ)",
+    content: [ "Cài đặt và sử dụng Bootstrap 4, tìm hiểu về các CSS Framework, CSS module, Alert, Button, Breadcrumb, Badges",
+      "Tìm hiểu về các  thành phần Slideshow, Card, Carousel, Collapse, Dropdowns, Modal, Pagination trong Bootstrap",
+      "Sử dụng Bootstrap để tạo các thành phần như menu, thanh công cụ, form đăng ký kết bạn, hộp thoại, và phân trang"
+    ]
+  },
+    {
+    title: "Engineering",
+    content: [ "Xây dựng các chức năng thông báo thông tin khi chuyển trang",
+      "Thiết kế các khu vực slideshow ảnh gia đình, ẩn hiện thông tin về sở thích, tính cách, kỹ năng",
+      "Tạo form đăng ký kết bạn bao gồm các thông tin cá nhân",
+      "Xây dựng công cụ phân trang chia nhỏ nội dung theo từng trang"
+    ]
+  },
+    {
+    title: "Arts",
+    content: [ "Thiết kế trang chủ website giới thiệu bản thân với các khu vực giới thiệu tên, mô tả và liên hệ",
+      "Tạo các hiệu ứng di chuyển qua lại cho slideshow ảnh gia đình",
+      "Tạo hộp thoại hiển thị thông tin mới nhất cho người dùng lần đầu vào trang chủ",
+    ]
+  },
+    {
+    title: "Mathematics",
+    content: [ "Áp dụng các lý thuyết về lưới và chuẩn màn hình trong thiết kế web với Bootstrap",
+      "Tìm hiểu về các thành phần của Bootstrap liên quan đến phân trang, thanh tiến trình, và các thao tác tương tác với người dùng",
+    ]
+  }
+]
+
 const AboutDetails = () => {
   return (
     <section className="py-20 w-full">
@@ -12,18 +51,21 @@ const AboutDetails = () => {
           }
         >
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+            Kiến thức
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
+            <ul>
+              {knowlegde_content.map(({title, content}) => (
+                <li key={{title}} >
+                  <span className="font-semibold text-accent">{title}:</span>
+                    <ul className="pl-4">
+                    {content.map((item, index) => (
+                      <li key={index}>- {item}.</li>
+                  ))}
+                    </ul>
+                </li>
+              ))}
+            </ul>
           </p>
         </ItemLayout>
 
