@@ -1,15 +1,16 @@
 import Image from "next/image";
 import bg from "../../../../public/background/about-background.png";
 import RenderModel from "@/components/RenderModel";
-// import HatModel from "@/components/models/HatModel";
-import AboutDetails from "@/components/about";
+
 import dynamic from "next/dynamic";
+import HP9 from "@/components/hp9";
+import HP10 from "@/components/hp10";
 const HatModel = dynamic(() => import("@/components/models/HatModel"), {
   ssr: false,
 });
 
 export const metadata = {
-  title: "About",
+  title: "Học phần 10",
 };
 
 export default function Home() {
@@ -31,16 +32,16 @@ export default function Home() {
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h1 className="font-bold  text-6xl xs:text-7xl sm:text-8xl  lg:text-9xl text-accent">
-            CodeBucks
+          <h1 className="font-bold  text-5xl xs:text-6xl sm:text-7xl  lg:text-8xl text-accent">
+            Học phần 10
           </h1>
-          <p className="font-light text-foreground text-lg">
-            Meet the wizard behind this portfolio
+          <p className="font-light text-foreground text-lg pt-4">
+            LẬP TRÌNH ỨNG DỤNG WEB NÂNG CAO, BẢO MẬT & HACK
           </p>
         </div>
       </div>
 
-      <AboutDetails />
+      <HP10 />
     </>
   );
 }

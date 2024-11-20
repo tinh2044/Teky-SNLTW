@@ -3,6 +3,45 @@ import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
 
+const knowlegde_content = [
+  {
+    title: "Science (Khoa học)",
+    content: [
+        "Tìm hiểu về các chủ đề ứng dụng trong thế giới số như: Streamer, Livestreaming, Youtube",
+        "Mã Morse, FBI, Kỹ sư bảo mật phần mềm, Virus trong thế giới số, và Bản quyền trong thời đại số"
+    ]
+
+  },
+    {
+    title: "Technology (Công nghệ)",
+    content: [ "Cài đặt và sử dụng Bootstrap 4, tìm hiểu về các CSS Framework, CSS module, Alert, Button, Breadcrumb, Badges",
+      "Tìm hiểu về các  thành phần Slideshow, Card, Carousel, Collapse, Dropdowns, Modal, Pagination trong Bootstrap",
+      "Sử dụng Bootstrap để tạo các thành phần như menu, thanh công cụ, form đăng ký kết bạn, hộp thoại, và phân trang"
+    ]
+  },
+    {
+    title: "Engineering",
+    content: [ "Xây dựng các chức năng thông báo thông tin khi chuyển trang",
+      "Thiết kế các khu vực slideshow ảnh gia đình, ẩn hiện thông tin về sở thích, tính cách, kỹ năng",
+      "Tạo form đăng ký kết bạn bao gồm các thông tin cá nhân",
+      "Xây dựng công cụ phân trang chia nhỏ nội dung theo từng trang"
+    ]
+  },
+    {
+    title: "Arts",
+    content: [ "Thiết kế trang chủ website giới thiệu bản thân với các khu vực giới thiệu tên, mô tả và liên hệ",
+      "Tạo các hiệu ứng di chuyển qua lại cho slideshow ảnh gia đình",
+      "Tạo hộp thoại hiển thị thông tin mới nhất cho người dùng lần đầu vào trang chủ",
+    ]
+  },
+    {
+    title: "Mathematics",
+    content: [ "Áp dụng các lý thuyết về lưới và chuẩn màn hình trong thiết kế web với Bootstrap",
+      "Tìm hiểu về các thành phần của Bootstrap liên quan đến phân trang, thanh tiến trình, và các thao tác tương tác với người dùng",
+    ]
+  }
+]
+
 const AboutDetails = () => {
   return (
     <section className="w-full py-20">
