@@ -101,7 +101,7 @@ export const BtnList = [
   { label: "HP9", link: "/hp9", icon: "contact", newTab: false },
   { label: "HP10", link: "/hp10", icon: "contact", newTab: false },
   { label: "HP11", link: "/hp11", icon: "contact", newTab: false },
-  { label: "HP12", link: "/hp11", icon: "contact", newTab: false },
+  { label: "HP12", link: "/hp12", icon: "contact", newTab: false },
   // { label: "About", link: "/about", icon: "about", newTab: false },
   // { label: "Projects", link: "/projects", icon: "projects", newTab: false },
   // { label: "Contact", link: "/contact", icon: "contact", newTab: false },
