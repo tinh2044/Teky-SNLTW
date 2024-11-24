@@ -1,14 +1,15 @@
 import Image from "next/image";
-import bg from "../../public/background/home-background.png";
+import bg from "../../public/background/testing_1.png";
 import RenderModel from "@/components/RenderModel";
 // import Wizard from "@/components/models/Wizard";
 import Navigation from "@/components/navigation";
 
 import dynamic from "next/dynamic";
+import Robot, { RobotCanvas } from "@/components/models/RobotModel";
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
   ssr: false,
 });
-
+// const renderer = await ReactThreeTestRenderer.create(<mesh />)
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between relative">
@@ -18,13 +19,14 @@ export default function Home() {
         src={bg}
         alt="background-image"
         fill
-        className="-z-50 w-full h-full object-cover object-center opacity-50"
+        className="-z-50 w-full h-full object-cover object-center"
       />
 
       <div className="w-full h-screen">
         <Navigation />
         <RenderModel>
-          <Wizard />
+          {/* <Wizard /> */}
+          <RobotCanvas />
         </RenderModel>
       </div>
     </main>

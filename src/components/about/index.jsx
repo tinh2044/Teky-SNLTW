@@ -1,20 +1,60 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
 
+const knowlegde_content = [
+  {
+    title: "Science (Khoa học)",
+    content: [
+        "Tìm hiểu về các chủ đề ứng dụng trong thế giới số như: Streamer, Livestreaming, Youtube",
+        "Mã Morse, FBI, Kỹ sư bảo mật phần mềm, Virus trong thế giới số, và Bản quyền trong thời đại số"
+    ]
+
+  },
+    {
+    title: "Technology (Công nghệ)",
+    content: [ "Cài đặt và sử dụng Bootstrap 4, tìm hiểu về các CSS Framework, CSS module, Alert, Button, Breadcrumb, Badges",
+      "Tìm hiểu về các  thành phần Slideshow, Card, Carousel, Collapse, Dropdowns, Modal, Pagination trong Bootstrap",
+      "Sử dụng Bootstrap để tạo các thành phần như menu, thanh công cụ, form đăng ký kết bạn, hộp thoại, và phân trang"
+    ]
+  },
+    {
+    title: "Engineering",
+    content: [ "Xây dựng các chức năng thông báo thông tin khi chuyển trang",
+      "Thiết kế các khu vực slideshow ảnh gia đình, ẩn hiện thông tin về sở thích, tính cách, kỹ năng",
+      "Tạo form đăng ký kết bạn bao gồm các thông tin cá nhân",
+      "Xây dựng công cụ phân trang chia nhỏ nội dung theo từng trang"
+    ]
+  },
+    {
+    title: "Arts",
+    content: [ "Thiết kế trang chủ website giới thiệu bản thân với các khu vực giới thiệu tên, mô tả và liên hệ",
+      "Tạo các hiệu ứng di chuyển qua lại cho slideshow ảnh gia đình",
+      "Tạo hộp thoại hiển thị thông tin mới nhất cho người dùng lần đầu vào trang chủ",
+    ]
+  },
+    {
+    title: "Mathematics",
+    content: [ "Áp dụng các lý thuyết về lưới và chuẩn màn hình trong thiết kế web với Bootstrap",
+      "Tìm hiểu về các thành phần của Bootstrap liên quan đến phân trang, thanh tiến trình, và các thao tác tương tác với người dùng",
+    ]
+  }
+]
+
 const AboutDetails = () => {
   return (
-    <section className="py-20 w-full">
-      <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
+    <section className="w-full py-20">
+      <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
         <ItemLayout
           className={
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
-          <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
+          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
             Architect of Enchantment
           </h2>
-          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+          <p className="text-xs font-light sm:text-sm md:text-base ">
             My journey in web development is powered by an array of mystical
             tools and languages, with JavaScript casting the core of my
             enchantments. I wield frameworks like React.js and Next.js with
@@ -30,17 +70,17 @@ const AboutDetails = () => {
         <ItemLayout
           className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            25+ <sub className="font-semibold text-base">clients</sub>
+          <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+            25+ <sub className="text-base font-semibold">clients</sub>
           </p>
         </ItemLayout>
 
         <ItemLayout
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
+          <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
             4+{" "}
-            <sub className="font-semibold text-base">years of experience</sub>
+            <sub className="text-base font-semibold">years of experience</sub>
           </p>
         </ItemLayout>
 

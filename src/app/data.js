@@ -90,19 +90,18 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "HP1", link: "/hp1", icon: "contact", newTab: false },
-  { label: "HP2", link: "/hp2", icon: "contact", newTab: false },
-  { label: "HP3", link: "/hp3", icon: "contact", newTab: false },
-  { label: "HP4", link: "/hp4", icon: "contact", newTab: false },
-  { label: "HP5", link: "/hp5", icon: "contact", newTab: false },
-  { label: "HP6", link: "/hp6", icon: "contact", newTab: false },
-  { label: "HP7", link: "/hp7", icon: "contact", newTab: false },
-  { label: "HP8", link: "/hp8", icon: "contact", newTab: false },
-  { label: "HP9", link: "/hp9", icon: "contact", newTab: false },
-  { label: "HP10", link: "/hp10", icon: "contact", newTab: false },
-  { label: "HP11", link: "/hp11", icon: "contact", newTab: false },
-  { label: "HP12", link: "/hp11", icon: "contact", newTab: false },
-
+  { label: "HP1 RB", link: "/hp1roblox", icon: "contact", newTab: false },
+  { label: "HP2 RB", link: "/hp2roblox", icon: "contact", newTab: false },
+  { label: "HP3 RB", link: "/hp3roblox", icon: "contact", newTab: false },
+  { label: "HP4 RB", link: "/hp4roblox", icon: "contact", newTab: false },
+  { label: "HP1 Web", link: "/hp1web", icon: "contact", newTab: false },
+  { label: "HP2 Web", link: "/hp2web", icon: "contact", newTab: false },
+  { label: "HP3 Web", link: "/hp3web", icon: "contact", newTab: false },
+  { label: "HP4 Web", link: "/hp4web", icon: "contact", newTab: false },
+  { label: "HP5 Web", link: "/hp5web", icon: "contact", newTab: false },
+  { label: "HP6 Web", link: "/hp6web", icon: "contact", newTab: false },
+  { label: "HP7 Web", link: "/hp7web", icon: "contact", newTab: false },
+  { label: "HP8 Web", link: "/hp8web", icon: "contact", newTab: false },
 ];
 
 
