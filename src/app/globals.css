@@ -8,6 +8,7 @@
     --foreground: 225 225 225;
     --muted: 115 115 115;
     --accent: 254 254 91;
+    --cyan: 0 255 255;
     /* hex value of rgb(254,254,91) color is  #FEFE5B  */
   }
 }
@@ -16,9 +17,12 @@
   .pause {
     animation-play-state: paused;
   }
+   .hover-bn {
+    @apply hover:shadow-glass-sm hover:bg-opacity-0 hover:backdrop-blur-[0px] hover:text-cyan-100;
+   }
 
   .custom-bg {
-    @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm;
+    @apply bg-cyan-200/50 border border-cyan-200 border-solid backdrop-blur-[6px];
   }
 }
 
