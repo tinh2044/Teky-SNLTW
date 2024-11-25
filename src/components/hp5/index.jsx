@@ -2,30 +2,58 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
+
+
+const knowledge_content = [
+  {
+    title: "Mục tiêu",
+    content: [
+      "Hiểu hệ quản trị nội dung (CMS), tạo và quản lý website tin tức.",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Xây dựng website tin tức hoàn chỉnh với menu, chuyên mục, và bài viết.",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Xây dựng trò chơi như Flappy Bird, Xếp gạch (Tetrix)."
+    ],
+  },
+  {
+    title: "Kỹ năng đạt được",
+    content: ["Thiết kế giao diện web cơ bản, sáng tạo nội dung."],
+  },
+  {
+    title: "Công cụ",
+    content: ["Wordpress."],
+  },
+];
 const HP5 = () => {
   return (
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
-        <ItemLayout
-          className={
-            " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-          }
-        >
-          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
+      <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8">
+          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
           Thiết kế web với Wordpress
           </h2>
-          <p className="text-xs font-light sm:text-sm md:text-base ">
-
-            Mục tiêu: Hiểu hệ quản trị nội dung (CMS), tạo và quản lý website tin tức.
-            <br/>
-            Ứng dụng thực tế: Xây dựng website tin tức hoàn chỉnh với menu, chuyên mục, và bài viết.
-            <br/>
-
-            Kỹ năng đạt được: Thiết kế giao diện web cơ bản, sáng tạo nội dung.
-            <br/>
-
-            Công cụ: Wordpress.
-          </p>
+          <div className="text-xs font-light sm:text-sm md:text-base">
+            <ul>
+              {knowledge_content.map(({ title, content }) => (
+                <li key={title}>
+                  <span className="font-semibold text-blue-300">{title}:</span>
+                  <ul className="pl-4 text-sky-50">
+                    {content.map((item, index) => (
+                      <li key={index}>- {item}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
         </ItemLayout>
 
         <ItemLayout

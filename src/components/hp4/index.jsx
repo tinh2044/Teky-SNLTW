@@ -2,30 +2,57 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
+
+const knowledge_content = [
+  {
+    title: "Mục tiêu",
+    content: [
+      "Sử dụng PyGame để phát triển các trò chơi phức tạp hơn với hoạt ảnh, sự kiện, và tương tác.",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Tạo ứng dụng như máy tính đơn giản (Simple Calculator) hoặc phần mềm vẽ (Simple Painter).",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Xây dựng trò chơi như Flappy Bird, Xếp gạch (Tetrix)."
+    ],
+  },
+  {
+    title: "Kỹ năng đạt được",
+    content: ["Sáng tạo, giải quyết vấn đề, tư duy thuật toán."],
+  },
+  {
+    title: "Công cụ",
+    content: ["Python IDLE, PyCharm, PyGame."],
+  },
+];
 const HP4 = () => {
   return (
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
-        <ItemLayout
-          className={
-            " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-          }
-        >
-          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
+      <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8">
+          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
           Lập trình Game
           </h2>
-          <p className="text-xs font-light sm:text-sm md:text-base ">
-
-            Mục tiêu: Sử dụng PyGame để phát triển các trò chơi phức tạp hơn với hoạt ảnh, sự kiện, và tương tác.
-            <br/>
-            Ứng dụng thực tế: Xây dựng trò chơi như Flappy Bird, Xếp gạch (Tetrix).
-            <br/>
-
-            Kỹ năng đạt được: Sáng tạo, giải quyết vấn đề, tư duy thuật toán.
-            <br/>
-
-            Công cụ: Python IDLE, PyCharm, PyGame.
-          </p>
+          <div className="text-xs font-light sm:text-sm md:text-base">
+            <ul>
+              {knowledge_content.map(({ title, content }) => (
+                <li key={title}>
+                  <span className="font-semibold text-blue-500">{title}:</span>
+                  <ul className="pl-4 text-sky-50">
+                    {content.map((item, index) => (
+                      <li key={index}>- {item}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
         </ItemLayout>
 
         <ItemLayout

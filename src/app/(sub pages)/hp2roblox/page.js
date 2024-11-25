@@ -1,15 +1,15 @@
 import Image from "next/image";
-import bg from "../../../../public/background/bg_8.png";
+import bg from "../../../../public/background/bg_hp2rb.png";
 import RenderModel from "@/components/RenderModel";
 
 import dynamic from "next/dynamic";
 import HP2Roblox from "@/components/hp2rb";
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+const BookModel = dynamic(() => import("@/components/models/BookModel"), {
   ssr: false,
 });
 
 export const metadata = {
-  title: "HP 3 Roblox",
+  title: "HP 2 Roblox",
 };
 
 export default function Home() {
@@ -25,16 +25,16 @@ export default function Home() {
 
       <div className="absolute left-0 z-10 w-full -translate-y-1/2 h-3/5 xs:h-3/4 sm:h-screen top-1/2">
         <RenderModel>
-          <HatModel />
+          <BookModel />
         </RenderModel>
       </div>
 
       <div className="relative flex flex-col items-center justify-center w-full h-screen">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
           <h1 className="text-5xl font-bold xs:text-6xl sm:text-7xl lg:text-8xl text-cyan-50">
-            Học phần 3
+            Học phần 2
           </h1>
-          <p className="text-4xl font-light text-blue-300 mt-5 ">
+          <p className="mt-5 text-4xl font-light text-blue-300 ">
             Siêu nhân làm game
           </p>
         </div>

@@ -2,28 +2,59 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
+
+
+const knowledge_content = [
+  {
+    title: "Mục tiêu",
+    content: [
+      "Học lập trình website với HTML, CSS và cập nhật website lên server ảo.",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Xây dựng trang web giới thiệu Teky với thanh điều hướng và giao diện cơ bản.",
+    ],
+  },
+  {
+    title: "Ứng dụng thực tế",
+    content: [
+      "Xây dựng trò chơi như Flappy Bird, Xếp gạch (Tetrix)."
+    ],
+  },
+  {
+    title: "Kỹ năng đạt được",
+    content: ["Tư duy lập trình web, tổ chức nội dung."],
+  },
+  {
+    title: "Công cụ",
+    content: ["Visual Studio."],
+  },
+];
 const HP6 = () => {
   return (
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
-        <ItemLayout
-          className={
-            " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-          }
-        >
-          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
+        
+      <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8">
+          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
           Lập trình web tĩnh (HTML, CSS)
           </h2>
-          <p className="text-xs font-light sm:text-sm md:text-base ">
-
-          Mục tiêu: Học lập trình website với HTML, CSS và cập nhật website lên server ảo.
-          <br/><br/>
-          Ứng dụng thực tế: Xây dựng trang web giới thiệu Teky với thanh điều hướng và giao diện cơ bản.
-          <br/><br/>
-          Kỹ năng đạt được: Tư duy lập trình web, tổ chức nội dung.
-          <br/><br/>
-          Công cụ: Visual Studio.
-          </p>
+          <div className="text-xs font-light sm:text-sm md:text-base">
+            <ul>
+              {knowledge_content.map(({ title, content }) => (
+                <li key={title}>
+                  <span className="font-semibold ">{title}:</span>
+                  <ul className="pl-4 text-sky-50">
+                    {content.map((item, index) => (
+                      <li key={index}>- {item}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
         </ItemLayout>
 
         <ItemLayout

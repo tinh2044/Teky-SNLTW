@@ -11,7 +11,7 @@ const HP2Web = () => {
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
-          <h2 className="w-full text-xl text-left capitalize md:text-2xl">
+          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
           Lập trình đồ họa
           </h2>
           <p className="text-xs font-light sm:text-sm md:text-base ">
@@ -95,7 +95,7 @@ const HP2Web = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-8 text-accent"}>
-          <p className="w-full text-2xl font-semibold text-center sm:text-5xl">Sản phẩm mẫu
+          <p className="w-full text-2xl font-semibold text-center text-blue-500 sm:text-4xl">Sản phẩm mẫu
             <img
             className="w-full rounded-md h-[400px]"
             src={"https://digiunivietnam.com/wp-content/uploads/2021/08/Python-game_3-Space-Invaders.gif"}

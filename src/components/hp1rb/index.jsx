@@ -5,73 +5,57 @@ import Link from "next/link";
 
 const knowledge_content = [
     {
-        title: "Science (Khoa học)",
+        title: "Mục tiêu",
         content: [
-                "Hiểu cách các hiệu ứng như ánh sáng, hạt (particles), và sương mù hoạt động, có thể liên quan đến mô phỏng các hiện tượng vật lý tự nhiên trong game",
-                "Ứng dụng các khái niệm khoa học về ánh sáng và không gian để tạo môi trường huyền ảo (liên quan đến vật lý và khí quyển)"
+            "Điều khiển nhân vật và camera: Hiểu cách điều khiển nhân vật và góc nhìn camera trong trò chơi.",
+            "Xây dựng cơ bản: Làm quen Roblox Studio, hệ trục tọa độ Oxyz và công cụ cơ bản.",
+            "Vật lý: Áp dụng BodyVelocity, BodyGyro để di chuyển vật thể.",
+            "Hiệu ứng: Thêm Fire, Smoke, SpotLight, SurfaceLight, Sparkles, ParticleEmitter.",
+            "Lua cơ bản: Học các kiểu dữ liệu, lệnh, vòng lặp, hàm cơ bản trong Lua.",
+            "Checkpoint: Tạo hệ thống checkpoint theo dõi tiến độ.",
+            "Publish trò chơi: Đưa trò chơi lên Roblox.com."
         ]
 
     },
     {
-        title: "Technology (Công nghệ)",
+        title: "Kỹ năng phát triển",
         content: [
-             "Sử dụng ScreenGui, Frame, TextLabel, ImageLabel để xây dựng giao diện",
-            "Tinh chỉnh Terrain bằng TerrainEditor",
-            "Tạo NPC và quản lý thông tin qua Arra",
-            "Sử dụng HumanoidDescription để điều chỉnh ngoại hình và tặng quà ngẫu nhiên",
-            "Lấy danh sách người chơi qua lệnh GetPlayers và tạo bảng xếp hạng bằng vòng lặp For",
-            "Thay đổi năng lực người chơi qua các property và function của Humanoid Instance"
+            "Kỹ năng hợp tác: Học cách lắng nghe, phân chia công việc và phản hồi xây dựng trong môi trường nhóm.",
+            "Kỹ năng giao tiếp: Diễn giải rõ ràng, tự tin trong trình bày và thể hiện sự tôn trọng đối với người khác.",
+            "Kỹ năng phản biện: Quan sát, lắng nghe và đặt câu hỏi hợp lý để cải thiện công việc.",
+            "Kỹ năng tư duy sáng tạo: Thiết kế trò chơi trên giấy và áp dụng vào thực tế trong Roblox Studio."
         ]
     },
     {
-        title: "Engineering",
+        title: "Công cụ",
         content: [
-            "Tìm hiểu Frame-by-Frame Animation, sử dụng FlipAnim để tạo chuyển động thủ công",
-            "Tạo Tweened Animation với Keyframe, Easing Style và áp dụng các nguyên tắc thiết kế Animation (Squash and Stretch, Anticipation, Slow In Slow Out)",
-            "Tạo và gắn hiệu ứng động vào nhân vật thông qua Particle Emitters và ServerStorage"
+            "Roblox Studio – Công cụ xây dựng và lập trình trò chơi."
 
         ]
     },
     {
-        title: "Arts",
+        title: "Ứng dụng",
         content: [
-            "Tạo không gian sống động với hiệu ứng ánh sáng, sương mù, và Skybox",
-            "Thiết kế hoạt ảnh sống động cho nhân vật dựa trên các nguyên tắc Animation",
-            "Tạo hiệu ứng đặc biệt thu hút qua việc điều chỉnh Particle Emitters"
+            "Obby Game (Vượt chướng ngại vật) – Trò chơi phổ biến trong Roblox yêu cầu người chơi vượt qua các chướng ngại vật để đạt được mục tiêu."
 
             ]
 
     },
-    {
-        title: "Mathematics",
-        content: [
-            "Sử dụng kích thước Array để lặp qua các phần tử",
-            "Sắp xếp và hiển thị kết quả dựa trên thời gian về đích của người chơi",
-            "Sử dụng lệnh random để chọn quà ngẫu nhiên",
-
-        ]
-    }
 ]
-
 const knowledge_images = [
-    "/assets/images/hp3roblox/b1.png",
-    "/assets/images/hp3roblox/b2.png",
-    "/assets/images/hp3roblox/b3.png",
-    "/assets/images/hp3roblox/b4.png",
-    "/assets/images/hp3roblox/b5.png",
-    "/assets/images/hp3roblox/b6.png",
-    "/assets/images/hp3roblox/b7.png",
-    "/assets/images/hp3roblox/b8.png",
+    "/assets/images/hp1roblox/hp1rb_1.png",
+    "/assets/images/hp1roblox/hp1rb_2.png",
+    "/assets/images/hp1roblox/move.jpg",
+    "/assets/images/hp1roblox/full_interface.png",
+    "/assets/images/hp1roblox/effect.jpeg",
+    "/assets/images/hp1roblox/checkpoint.jpeg",
 ]
 const project_samples = [
     {
-        name: "Hiệu chỉnh thiên nhiên",
-        path: "/assets/images/hp3roblox/sp_b1.jpg",
-    },
-    {
-        name: "Endless Runner",
-        path: "/assets/images/hp3roblox/sp_b2.webp",
+    name: "Vượt chướng ngại vật (Obby Game)",
+        path: "/assets/images/hp1roblox/obby.jpg",
     }
+    
 ]
 const HP1Roblox = () => {
     return (
@@ -82,8 +66,8 @@ const HP1Roblox = () => {
                         " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
                     }
                 >
-                    <h2 className="w-full text-xl text-left capitalize md:text-2xl mt-4">
-                        SIÊU NHÂN LÀM GAME - LEVEL 3
+                    <h2 className="w-full mt-4 text-xl text-left capitalize md:text-2xl">
+                    LÀM QUEN VỚI THIẾT KẾ VÀ LẬP TRÌNH GAME - OBBY GAME
                     </h2>
                     <div className="text-xs font-light sm:text-sm md:text-base ">
 
@@ -108,7 +92,7 @@ const HP1Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="object-cover w-20 h-20 rounded-xl"
                             src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -121,7 +105,7 @@ const HP1Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="object-cover w-20 h-20 rounded-xl"
                             src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -134,7 +118,7 @@ const HP1Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="object-cover w-20 h-20 rounded-xl"
                             src={"/assets/icons/animation.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -162,7 +146,7 @@ const HP1Roblox = () => {
                                 className="w-full"
                             >
                                 <img
-                                    className="w-full h-auto rounded-xl object-cover"
+                                    className="object-cover w-full h-auto rounded-xl"
                                     src={image_path}
                                     alt="KienThuc"
                                     loading="lazy"
@@ -179,13 +163,13 @@ const HP1Roblox = () => {
                 </ItemLayout>
                 {
                     project_samples.map(({path, name}) => (
-                        <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
+                        <ItemLayout className={"col-span-full "} key={name}>
                             <Link
                                 href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
                                 target="_blank"
                                 className="w-full"
                             >
-                                <p className="w-full text-2xl font-semibold text-center sm:text-xl my-2 text-accent">{name}</p>
+                                <p className="w-full my-2 text-2xl font-semibold text-center sm:text-xl text-accent">{name}</p>
                                 <img
 
                                     className="w-full h-auto rounded-xl"

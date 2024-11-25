@@ -50,7 +50,13 @@ const HP1Web = () => {
             loading="lazy"
           />
         </ItemLayout>
-
+        <ItemLayout
+          className={" col-span-full text-accent"}
+        >
+          <p className="w-full text-2xl font-semibold text-center sm:text-3xl">
+          Kiến thức
+          </p>
+        </ItemLayout>
         <ItemLayout className={"col-span-full md:col-span-6 "}>
         <Link
             href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"

@@ -5,73 +5,55 @@ import Link from "next/link";
 
 const knowledge_content = [
     {
-        title: "Science (Khoa học)",
+        title: "Mục tiêu",
         content: [
-                "Hiểu cách các hiệu ứng như ánh sáng, hạt (particles), và sương mù hoạt động, có thể liên quan đến mô phỏng các hiện tượng vật lý tự nhiên trong game",
-                "Ứng dụng các khái niệm khoa học về ánh sáng và không gian để tạo môi trường huyền ảo (liên quan đến vật lý và khí quyển)"
+            "Sử dụng Terrain Editor/Region để tạo và chỉnh sửa cảnh quan.",
+            "Tạo giao diện cơ bản với Frame, Label, Button.",
+            "Hiệu chỉnh giao diện phù hợp với các thiết bị khác nhau.",
+            "Chia sẻ thông tin giữa các script bằng ValueObject.",
+            "Quản lý thông tin người chơi qua Player Service.",
+            "Thiết kế 3D cơ bản với TinkerCad và thêm vào Roblox.",
+            "Lập trình Lua nâng cao: function, vòng lặp For, sự kiện chạm và xử lý."
         ]
 
     },
     {
-        title: "Technology (Công nghệ)",
+        title: "Kỹ năng phát triển",
         content: [
-             "Sử dụng ScreenGui, Frame, TextLabel, ImageLabel để xây dựng giao diện",
-            "Tinh chỉnh Terrain bằng TerrainEditor",
-            "Tạo NPC và quản lý thông tin qua Arra",
-            "Sử dụng HumanoidDescription để điều chỉnh ngoại hình và tặng quà ngẫu nhiên",
-            "Lấy danh sách người chơi qua lệnh GetPlayers và tạo bảng xếp hạng bằng vòng lặp For",
-            "Thay đổi năng lực người chơi qua các property và function của Humanoid Instance"
+            "Hợp tác: Cởi mở và tiếp thu ý kiến.",
+            "Giao tiếp: Diễn giải rõ ràng, tự tin trình bày, góp ý tích cực.",
+            "Phản biện: Sắp xếp ý tưởng, phân tích dữ kiện.",
+            "Tư duy sáng tạo: Thiết kế trò chơi trên giấy, brainstorm ý tưởng."
         ]
     },
     {
-        title: "Engineering",
+        title: "Công cụ",
         content: [
-            "Tìm hiểu Frame-by-Frame Animation, sử dụng FlipAnim để tạo chuyển động thủ công",
-            "Tạo Tweened Animation với Keyframe, Easing Style và áp dụng các nguyên tắc thiết kế Animation (Squash and Stretch, Anticipation, Slow In Slow Out)",
-            "Tạo và gắn hiệu ứng động vào nhân vật thông qua Particle Emitters và ServerStorage"
+            "Roblox Studio, TinkerCad."
 
         ]
     },
     {
-        title: "Arts",
+        title: "Ứng dụng",
         content: [
-            "Tạo không gian sống động với hiệu ứng ánh sáng, sương mù, và Skybox",
-            "Thiết kế hoạt ảnh sống động cho nhân vật dựa trên các nguyên tắc Animation",
-            "Tạo hiệu ứng đặc biệt thu hút qua việc điều chỉnh Particle Emitters"
+            "Treasure Hunting Game - Người chơi thi tìm kho báu trong thời gian giới hạn."
 
             ]
 
     },
-    {
-        title: "Mathematics",
-        content: [
-            "Sử dụng kích thước Array để lặp qua các phần tử",
-            "Sắp xếp và hiển thị kết quả dựa trên thời gian về đích của người chơi",
-            "Sử dụng lệnh random để chọn quà ngẫu nhiên",
-
-        ]
-    }
 ]
-
 const knowledge_images = [
-    "/assets/images/hp3roblox/b1.png",
-    "/assets/images/hp3roblox/b2.png",
-    "/assets/images/hp3roblox/b3.png",
-    "/assets/images/hp3roblox/b4.png",
-    "/assets/images/hp3roblox/b5.png",
-    "/assets/images/hp3roblox/b6.png",
-    "/assets/images/hp3roblox/b7.png",
-    "/assets/images/hp3roblox/b8.png",
+    "/assets/images/hp2roblox/Terrain.png",
+    "/assets/images/hp2roblox/Frame.jpg",
+    "/assets/images/hp2roblox/3d.png",
+    "/assets/images/hp2roblox/lua.jpg",
 ]
 const project_samples = [
     {
-        name: "Hiệu chỉnh thiên nhiên",
-        path: "/assets/images/hp3roblox/sp_b1.jpg",
-    },
-    {
-        name: "Endless Runner",
-        path: "/assets/images/hp3roblox/sp_b2.webp",
+    name: "Săn kho báu (TREASURE HUNTING GAME)",
+        path: "/assets/images/hp2roblox/treasure.png",
     }
+    
 ]
 const HP2Roblox = () => {
     return (
@@ -82,8 +64,8 @@ const HP2Roblox = () => {
                         " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
                     }
                 >
-                    <h2 className="w-full text-xl text-left capitalize md:text-2xl mt-4">
-                        SIÊU NHÂN LÀM GAME - LEVEL 3
+                    <h2 className="w-full mt-4 text-xl text-left capitalize md:text-2xl">
+                    TRAU DỒI KỸ NĂNG THIẾT KẾ GAME - TREASURE HUNTING GAME
                     </h2>
                     <div className="text-xs font-light sm:text-sm md:text-base ">
 
@@ -108,7 +90,7 @@ const HP2Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="object-cover w-20 h-20 rounded-xl"
                             src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -121,7 +103,7 @@ const HP2Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="object-cover w-20 h-20 rounded-xl"
                             src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -134,13 +116,13 @@ const HP2Roblox = () => {
                         className={"my-4"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
-                            src={"/assets/icons/animation.png"}
+                            className="object-cover w-20 h-20 rounded-xl"
+                            src={"/assets/icons/tinkercad.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
                         <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-                            Animation
+                            TinkerCad
                         </p>
                     </ItemLayout>
                 </div>
@@ -162,7 +144,7 @@ const HP2Roblox = () => {
                                 className="w-full"
                             >
                                 <img
-                                    className="w-full h-auto rounded-xl object-cover"
+                                    className="object-cover w-full h-auto rounded-xl"
                                     src={image_path}
                                     alt="KienThuc"
                                     loading="lazy"
@@ -179,13 +161,13 @@ const HP2Roblox = () => {
                 </ItemLayout>
                 {
                     project_samples.map(({path, name}) => (
-                        <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
+                        <ItemLayout className={"col-span-full "} key={name}>
                             <Link
                                 href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
                                 target="_blank"
                                 className="w-full"
                             >
-                                <p className="w-full text-2xl font-semibold text-center sm:text-xl my-2 text-accent">{name}</p>
+                                <p className="w-full my-2 text-2xl font-semibold text-center sm:text-xl text-accent">{name}</p>
                                 <img
 
                                     className="w-full h-auto rounded-xl"

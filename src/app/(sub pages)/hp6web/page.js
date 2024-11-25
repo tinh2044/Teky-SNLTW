@@ -1,10 +1,10 @@
 import Image from "next/image";
-import bg from "../../../../public/background/about-background.png";
+import bg from "../../../../public/background/bg_hp6web.png";
 import RenderModel from "@/components/RenderModel";
 // import HatModel from "@/components/models/HatModel";
 import HP6 from "@/components/hp6";
 import dynamic from "next/dynamic";
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+const BookModel = dynamic(() => import("@/components/models/BookModel"), {
   ssr: false,
 });
 
@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="absolute left-0 z-10 w-full -translate-y-1/2 h-3/5 xs:h-3/4 sm:h-screen top-1/2">
         <RenderModel>
-          <HatModel />
+          <BookModel />
         </RenderModel>
       </div>
 
