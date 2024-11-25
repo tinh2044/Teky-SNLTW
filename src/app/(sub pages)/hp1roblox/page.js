@@ -1,15 +1,15 @@
 import Image from "next/image";
-import bg from "../../../../public/background/about-background.png";
+import bg from "../../../../public/background/bg_8.png";
 import RenderModel from "@/components/RenderModel";
-// import HatModel from "@/components/models/HatModel";
-import HP1 from "@/components/hp1";
+
 import dynamic from "next/dynamic";
+import HP1Roblox from "@/components/hp1rb";
 const HatModel = dynamic(() => import("@/components/models/HatModel"), {
   ssr: false,
 });
 
 export const metadata = {
-  title: "About",
+  title: "HP 3 Roblox",
 };
 
 export default function Home() {
@@ -31,16 +31,16 @@ export default function Home() {
 
       <div className="relative flex flex-col items-center justify-center w-full h-screen">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h1 className="text-5xl font-bold xs:text-6xl sm:text-7xl lg:text-8xl text-accent">
-          Học phần 1
+          <h1 className="text-5xl font-bold xs:text-6xl sm:text-7xl lg:text-8xl text-cyan-50">
+            Học phần 3
           </h1>
-          <p className="text-lg font-light text-foreground">
-            Siêu nhân lập trình web
+          <p className="text-4xl font-light text-blue-300 mt-5 ">
+            Siêu nhân làm game
           </p>
         </div>
       </div>
 
-      <HP1 />
+      <HP1Roblox />
     </>
   );
 }

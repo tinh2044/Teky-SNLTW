@@ -2,7 +2,7 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
-const HP2 = () => {
+const HP1Web = () => {
   return (
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
@@ -12,33 +12,32 @@ const HP2 = () => {
           }
         >
           <h2 className="w-full text-xl text-left capitalize md:text-2xl">
-          Lập trình đồ họa
+          Các khái niệm lập trình cơ bản
           </h2>
           <p className="text-xs font-light sm:text-sm md:text-base ">
 
-          Mục tiêu: Làm quen với lập trình đồ họa và thư viện Turtle, thiết kế các trò chơi cơ bản có nền tảng đồ họa.
-          <br/>
-          Ứng dụng thực tế: Xây dựng các trò chơi như Snake, Chiến binh không gian với kịch bản tương tác bàn phím và chuột.
-          <br/>
-          Kỹ năng đạt được: Sáng tạo, phân tích, xây dựng kịch bản trò chơi.
-          <br/>
-          Công cụ: Python IDLE, Turtle.
+            Mục tiêu: Làm quen với các khái niệm cơ bản trong lập trình Python. Hiểu cách sử dụng biến, kiểu dữ liệu, vòng lặp, cấu trúc điều kiện, và danh sách.
+            <br/>
+            Ứng dụng thực tế: Xây dựng các chương trình đơn giản như phần mềm quản lý học sinh hoặc trò chơi đoán số.
+            <br/>
+
+            Kỹ năng đạt được: Giải quyết vấn đề, hợp tác, giao tiếp và phản biện.
+            <br/>
+
+            Công cụ: Python IDLE.
           </p>
         </ItemLayout>
 
         <ItemLayout
-          className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={" col-span-full xs:col-span-6 lg:col-span-4 text-sky-50"}
         >
           <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-            Python <sub className="text-base font-semibold ">programming
-            
-            </sub>
-            
+            Python <sub className="text-base font-semibold">programming</sub>
           </p>
         </ItemLayout>
 
         <ItemLayout
-          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={"col-span-full xs:col-span-6 lg:col-span-4 text-sky-50"}
         >
           <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
             IDE+{" "}
@@ -46,7 +45,7 @@ const HP2 = () => {
           </p>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=py,replit,vscode`}
+            src={`https://skillicons.dev/icons?i=replit,vscode,`}
             alt="CodeBucks"
             loading="lazy"
           />
@@ -60,7 +59,7 @@ const HP2 = () => {
           >
             <img
               className="w-full h-auto"
-              src={"/assets/images/pg_hp2_1.png"}
+              src={"/assets/images/pg_hp1_1.png"}
               alt="CodeBucks"
               loading="lazy"
             />
@@ -75,7 +74,7 @@ const HP2 = () => {
           >
             <img
               className="w-full h-auto"
-              src={"/assets/images/pg_hp2_2.png"}
+              src={"/assets/images/pg_hp1_2.png"}
               alt="CodeBucks"
               loading="lazy"
             />
@@ -94,11 +93,11 @@ const HP2 = () => {
           ></iframe>
         </ItemLayout>
 
-        <ItemLayout className={"col-span-full md:col-span-8 text-accent"}>
+        <ItemLayout className={"col-span-full md:col-span-8 text-sky-50"}>
           <p className="w-full text-2xl font-semibold text-center sm:text-5xl">Sản phẩm mẫu
             <img
-            className="w-full rounded-md h-[400px]"
-            src={"https://digiunivietnam.com/wp-content/uploads/2021/08/Python-game_3-Space-Invaders.gif"}
+            className="w-full h-auto rounded-md"
+            src={"https://viettuts.vn/images/python/bai-tap-python/bai-tap-quan-ly-sinh-vien-trong-python-3.png"}
             alt="Hình ảnh minh họa cho sản phẩm mẫu"
             loading="lazy"
           />
@@ -110,4 +109,4 @@ const HP2 = () => {
   );
 };
 
-export default HP2;
+export default HP1Web;

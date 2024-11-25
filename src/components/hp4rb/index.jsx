@@ -2,55 +2,76 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
-import HP3Roblox from "@/components/hp12";
 
 const knowledge_content = [
     {
         title: "Science (Khoa học)",
         content: [
-            "Tìm hiểu quy tắc hoạt động của thương mại điện tử",
-            "Phòng chống SQL Injection: Áp dụng kiến thức bảo mật trong lập trình",
-        ]
+                "BodyForce, VectorForce, và Attachment: Giải thích lực đẩy và động học trong môi trường ảo",
+                "Động cơ i-on hoạt động như thế nào: Khái niệm về lực đẩy trong thực tế và mô phỏng trong trò chơi",
+            "Động cơ i-on hoạt động như thế nào: Khái niệm về lực đẩy trong thực tế và mô phỏng trong trò chơi"
+            ]
 
     },
     {
         title: "Technology (Công nghệ)",
         content: [
-            "Công cụ: Sử dụng Visual Studio Code, Django Framework, và các API đăng nhập (Google, Facebook)",
-            "Ôn tập HTML, CSS",
-            "Triển khai website lên server: Hiểu quy trình đưa website lên mạng"
+             "Sử dụng Light Service và các thành phần GUI như ScreenGui, Frame, TextLabel, ImageLabel",
+            "Camera: Thuộc tính CameraType, FieldOfView, và cách lập trình Top-Down Camera",
+            "Remote Event: Truyền dữ liệu giữa Client và Server",
+            "Remote Function: Tối ưu hóa giao tiếp giữa Client và Server để giảm lag",
         ]
     },
     {
         title: "Engineering",
         content: [
-            "Thiết kế giao diện và cơ sở dữ liệu",
-            "Kết nối các thành phần frontend và backend, đảm bảo luồng dữ liệu liền mạch"
+                "So sánh Model và Union, Weld vs Weld Constraint: Các kỹ thuật kết nối vật thể",
+                 "Thiết kế nhân dạng phi thuyền: Ứng dụng StarterCharacter và LocalScript",
+            "Gắn sự kiện điều khiển phi thuyền qua ContextActionService",
+            "Xử lý sự kiện va chạm: Sử dụng Touch và quản lý Leaderboard",
+
         ]
     },
     {
         title: "Arts",
         content: [
-            "Tạo trải nghiệm người dùng (UX/UI) thân thiện và trực quan trên trang chủ, trang chi tiết sản phẩm và các trang phụ khác",
-            "Sắp xếp bố cục nội dung hợp lý (menu, danh mục, hình ảnh sản phẩm)"
-        ]
+                "Thiết kế màn hình chào mừng và giới thiệu: Sử dụng GUI để tạo trải nghiệm hấp dẫn",
+            "Thiết kế phi thuyền và đạn: Tập trung vào tính thẩm mỹ và sáng tạo cá nhân",
+            "Tạo nhân dạng phi thuyền: Thể hiện cá tính người chơi qua thiết kế độc đáo"
+            ]
+
     },
     {
         title: "Mathematics",
-        content: ["Xử lý dữ liệu thanh toán",
-            "Sử dụng mô hình quan hệ (Relational Model) trong thiết kế cơ sở dữ liệu"
+        content: [
+            "VectorForce: Các phép tính vectơ liên quan đến lực",
+            "Tính toán độ trễ (latency): Sử dụng thời gian thực (tick()) để tối ưu hóa",
+            "Điều chỉnh vị trí viên đạn: Tính toán chính xác vị trí để đảm bảo công bằng"
         ]
     }
 ]
 
 const knowledge_images = [
-    "/assets/images/hp12/b1.png",
-    "/assets/images/hp12/b2.avif",
-    "/assets/images/hp12/b3.png",
-    "/assets/images/hp12/b4.png",
+    "/assets/images/hp4roblox/b1.png",
+    "/assets/images/hp4roblox/b2.png",
+    "/assets/images/hp4roblox/b3.png",
+    "/assets/images/hp4roblox/b4.png",
+    "/assets/images/hp4roblox/b5.png",
+    "/assets/images/hp4roblox/b6.png",
+    "/assets/images/hp4roblox/b7.png",
+    "/assets/images/hp4roblox/b8.png",
 ]
-
-const HP12 = () => {
+const project_samples = [
+    {
+        name: "Phi thuyền không gian",
+        path: "/assets/images/hp4roblox/sp_b1.png",
+    },
+    {
+        name: "Đại chiến không gian",
+        path: "/assets/images/hp4roblox/sp_b2.webp",
+    }
+]
+const HP4Roblox = () => {
     return (
         <section className="w-full py-20">
             <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
@@ -60,14 +81,14 @@ const HP12 = () => {
                     }
                 >
                     <h2 className="w-full text-xl text-left capitalize md:text-2xl mt-4">
-                        LẬP TRÌNH ỨNG DỤNG WEB NÂNG CAO, BẢO MẬT & HACK
+                        SIÊU NHÂN LÀM GAME - LEVEL 4
                     </h2>
                     <div className="text-xs font-light sm:text-sm md:text-base ">
 
                         <ul>
                             {knowledge_content.map(({title, content}) => (
                                 <li key={{title}}>
-                                    <span className="font-semibold text-accent">{title}:</span>
+                                    <span className="font-semibold text-sky-50">{title}:</span>
                                     <ul className="pl-4">
                                         {content.map((item, index) => (
                                             <li key={index}>- {item}.</li>
@@ -80,18 +101,18 @@ const HP12 = () => {
                 </ItemLayout>
 
                 <div
-                    className={"h-full col-span-full xs:col-span-6 lg:col-span-4 text-accent flex flex-col justify-between"}>
+                    className={"h-full col-span-full xs:col-span-6 lg:col-span-4 text-sky-50 flex flex-col justify-between"}>
                     <ItemLayout
                         className={"my-4"}
                     >
                         <img
                             className="w-20 h-20 rounded-xl object-cover"
-                            src={"/assets/icons/python.png"}
+                            src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
                         <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-                            Python
+                            Roblox Studio
                         </p>
                     </ItemLayout>
                     <ItemLayout
@@ -99,12 +120,12 @@ const HP12 = () => {
                     >
                         <img
                             className="w-20 h-20 rounded-xl object-cover"
-                            src={"/assets/icons/django.png"}
+                            src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
                         <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-                            Django
+                            Lua
                         </p>
                     </ItemLayout>
                     <ItemLayout
@@ -112,35 +133,35 @@ const HP12 = () => {
                     >
                         <img
                             className="w-20 h-20 rounded-xl object-cover"
-                            src={"/assets/icons/sql.png"}
+                            src={"/assets/icons/client.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
                         <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-                            SQL
+                            Client
                         </p>
                     </ItemLayout>
-                    <ItemLayout
+                     <ItemLayout
                         className={"my-4"}
                     >
                         <img
                             className="w-20 h-20 rounded-xl object-cover"
-                            src={"/assets/icons/redis.png"}
+                            src={"/assets/icons/server.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
                         <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
-                            Redis
+                            Server
                         </p>
                     </ItemLayout>
                 </div>
 
 
                 <ItemLayout
-                    className={" col-span-full text-accent"}
+                    className={" col-span-full text-sky-50"}
                 >
                     <p className="w-full text-2xl font-semibold text-center sm:text-3xl">
-                        Kiến thức về Backend
+                        Kiến thức
                     </p>
                 </ItemLayout>
                 {
@@ -167,26 +188,29 @@ const HP12 = () => {
                         Sản phẩm mẫu
                     </p>
                 </ItemLayout>
-                <ItemLayout className={"col-span-full md:col-span-full "}>
-                    <Link
-                        href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
-                        target="_blank"
-                        className="w-full"
-                    >
-                        <p className="w-full text-2xl font-semibold text-center sm:text-xl my-2 text-accent">WEB BÁN HÀNG</p>
-                        <img
+                {
+                    project_samples.map(({path, name}) => (
+                        <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
+                            <Link
+                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                target="_blank"
+                                className="w-full"
+                            >
+                                <p className="w-full text-2xl font-semibold text-center sm:text-xl my-2 text-accent">{name}</p>
+                                <img
 
-                            className="w-full h-auto rounded-xl"
-                            src={"/assets/images/hp12/sp_b1.jpg"}
-                            alt="SanPham"
-                            loading="lazy"
-                        />
-                    </Link>
-                </ItemLayout>
+                                    className="w-full h-auto rounded-xl"
+                                    src={path}
+                                    alt="SanPham"
+                                    loading="lazy"
+                                />
+                            </Link>
+                        </ItemLayout>))
+                }
 
             </div>
         </section>
     );
 };
 
-export default HP12;
+export default HP4Roblox;

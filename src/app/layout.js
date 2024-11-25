@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata = {
   title: {
     template:
-      "Teky SNTLW",
+      "Teky SNLG-SNTLW",
     default:
       "Teky SNTLW",
   },

@@ -5,9 +5,9 @@
 @layer base {
   :root {
     --background: 27 27 27;
-    --foreground: 225 225 225;
+    --foreground: 59 130 246;
     --muted: 115 115 115;
-    --accent: 254 254 91;
+    --accent: 236 254 255;
     --cyan: 0 255 255;
     /* hex value of rgb(254,254,91) color is  #FEFE5B  */
   }

@@ -5,8 +5,8 @@ import clsx from "clsx";
 const ItemLayout = ({ children, className }) => {
   return (
     <motion.div
-    initial={{ y: 50, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className={clsx(

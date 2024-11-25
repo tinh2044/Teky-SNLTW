@@ -12,8 +12,8 @@ const HomeBtn = () => {
       transition={{ delay: 1 }}
       href={"/"}
       target={"_self"}
-      className="text-foreground  rounded-full flex items-center justify-center
-        custom-bg fixed top-4 left-4 w-fit self-start z-50
+      className="text-cyan-500  rounded-full flex items-center justify-center
+        custom-bg fixed top-4 left-4 w-fit self-start z-50 hover-bn
         "
       aria-label={"home"}
       name={"home"}

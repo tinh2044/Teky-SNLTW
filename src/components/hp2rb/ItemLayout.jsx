@@ -10,7 +10,7 @@ const ItemLayout = ({ children, className }) => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className={clsx(
-        "custom-bg p-2 sm:p-2 rounded-xl flex items-center justify-center space-y-8 hover-bn",
+        "custom-bg p-2 sm:p-2 rounded-xl flex items-center justify-center space-y-8",
         className
       )}
     >
