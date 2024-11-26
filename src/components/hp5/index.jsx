@@ -37,14 +37,14 @@ const HP5 = () => {
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
         <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8 text-accent">
-          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
+          <h2 className="heading-course">
             Thiết kế web với Wordpress
           </h2>
-          <div className="text-xs font-light sm:text-sm md:text-base">
+          <div className="knowledge">
             <ul>
               {knowledge_content.map(({ title, content }) => (
                 <li key={title}>
-                  <span className="font-semibold text-blue-300">{title}:</span>
+                  <span className="font-semibold text-foreground">{title}:</span>
                   <ul className="pl-4 text-sky-50">
                     {content.map((item, index) => (
                       <li key={index}>- {item}</li>
@@ -87,7 +87,7 @@ const HP5 = () => {
         </ItemLayout>
         <ItemLayout className={"col-span-full  "}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -108,7 +108,7 @@ const HP5 = () => {
         </ItemLayout>
         <ItemLayout className={"col-span-full md:col-span-6 "}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -124,7 +124,7 @@ const HP5 = () => {
           className={"col-span-full sm:col-span-6 "}
         >
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >

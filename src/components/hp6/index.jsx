@@ -38,10 +38,10 @@ const HP6 = () => {
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
 
         <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8 text-accent">
-          <h2 className="w-full text-xl font-bold text-left capitalize md:text-2xl">
+          <h2 className="heading-course">
             Lập trình web tĩnh (HTML, CSS)
           </h2>
-          <div className="text-xs font-light sm:text-sm md:text-base">
+          <div className="knowledge">
             <ul>
               {knowledge_content.map(({ title, content }) => (
                 <li key={title}>
@@ -88,7 +88,7 @@ const HP6 = () => {
         </ItemLayout>
         <ItemLayout className={"col-span-full  "}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -109,7 +109,7 @@ const HP6 = () => {
         </ItemLayout>
         <ItemLayout className={"col-span-full md:col-span-6 "}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -125,7 +125,7 @@ const HP6 = () => {
           className={"col-span-full sm:col-span-6 "}
         >
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >

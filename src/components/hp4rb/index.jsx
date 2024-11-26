@@ -7,16 +7,16 @@ const knowledge_content = [
     {
         title: "Science (Khoa học)",
         content: [
-                "BodyForce, VectorForce, và Attachment: Giải thích lực đẩy và động học trong môi trường ảo",
-                "Động cơ i-on hoạt động như thế nào: Khái niệm về lực đẩy trong thực tế và mô phỏng trong trò chơi",
+            "BodyForce, VectorForce, và Attachment: Giải thích lực đẩy và động học trong môi trường ảo",
+            "Động cơ i-on hoạt động như thế nào: Khái niệm về lực đẩy trong thực tế và mô phỏng trong trò chơi",
             "Động cơ i-on hoạt động như thế nào: Khái niệm về lực đẩy trong thực tế và mô phỏng trong trò chơi"
-            ]
+        ]
 
     },
     {
         title: "Technology (Công nghệ)",
         content: [
-             "Sử dụng Light Service và các thành phần GUI như ScreenGui, Frame, TextLabel, ImageLabel",
+            "Sử dụng Light Service và các thành phần GUI như ScreenGui, Frame, TextLabel, ImageLabel",
             "Camera: Thuộc tính CameraType, FieldOfView, và cách lập trình Top-Down Camera",
             "Remote Event: Truyền dữ liệu giữa Client và Server",
             "Remote Function: Tối ưu hóa giao tiếp giữa Client và Server để giảm lag",
@@ -25,8 +25,8 @@ const knowledge_content = [
     {
         title: "Engineering",
         content: [
-                "So sánh Model và Union, Weld vs Weld Constraint: Các kỹ thuật kết nối vật thể",
-                 "Thiết kế nhân dạng phi thuyền: Ứng dụng StarterCharacter và LocalScript",
+            "So sánh Model và Union, Weld vs Weld Constraint: Các kỹ thuật kết nối vật thể",
+            "Thiết kế nhân dạng phi thuyền: Ứng dụng StarterCharacter và LocalScript",
             "Gắn sự kiện điều khiển phi thuyền qua ContextActionService",
             "Xử lý sự kiện va chạm: Sử dụng Touch và quản lý Leaderboard",
 
@@ -35,10 +35,10 @@ const knowledge_content = [
     {
         title: "Arts",
         content: [
-                "Thiết kế màn hình chào mừng và giới thiệu: Sử dụng GUI để tạo trải nghiệm hấp dẫn",
+            "Thiết kế màn hình chào mừng và giới thiệu: Sử dụng GUI để tạo trải nghiệm hấp dẫn",
             "Thiết kế phi thuyền và đạn: Tập trung vào tính thẩm mỹ và sáng tạo cá nhân",
             "Tạo nhân dạng phi thuyền: Thể hiện cá tính người chơi qua thiết kế độc đáo"
-            ]
+        ]
 
     },
     {
@@ -77,18 +77,18 @@ const HP4Roblox = () => {
             <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
                 <ItemLayout
                     className={
-                        " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
+                        " col-span-full lg:col-span-8 row-span-2 flex-col items-start text-accent"
                     }
                 >
-                    <h2 className="w-full text-xl text-left capitalize md:text-2xl mt-4">
+                    <h2 className="heading-course">
                         SIÊU NHÂN LÀM GAME - LEVEL 4
                     </h2>
-                    <div className="text-xs font-light sm:text-sm md:text-base ">
+                    <div className="knowledge">
 
                         <ul>
-                            {knowledge_content.map(({title, content}) => (
-                                <li key={{title}}>
-                                    <span className="font-semibold text-sky-50">{title}:</span>
+                            {knowledge_content.map(({ title, content }) => (
+                                <li key={{ title }}>
+                                    <span className="font-semibold text-foreground">{title}:</span>
                                     <ul className="pl-4">
                                         {content.map((item, index) => (
                                             <li key={index}>- {item}.</li>
@@ -101,12 +101,12 @@ const HP4Roblox = () => {
                 </ItemLayout>
 
                 <div
-                    className={"h-full col-span-full xs:col-span-6 lg:col-span-4 text-sky-50 flex flex-col justify-between"}>
+                    className={"tool"}>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -116,23 +116,23 @@ const HP4Roblox = () => {
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Lua
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/client.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -141,11 +141,11 @@ const HP4Roblox = () => {
                             Client
                         </p>
                     </ItemLayout>
-                     <ItemLayout
-                        className={"my-4"}
+                    <ItemLayout
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/server.png"}
                             alt="KienThuc"
                             loading="lazy"
@@ -158,17 +158,17 @@ const HP4Roblox = () => {
 
 
                 <ItemLayout
-                    className={" col-span-full text-sky-50"}
+                    className={" col-span-full text-accent"}
                 >
-                    <p className="w-full text-2xl font-semibold text-center sm:text-3xl">
+                    <p className="knowledge-2">
                         Kiến thức
                     </p>
                 </ItemLayout>
                 {
                     knowledge_images.map((image_path) => (
-                        <ItemLayout className={"col-span-full md:col-span-6 "} key={image_path}>
+                        <ItemLayout className={"col-span-6 "} key={image_path}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
@@ -189,10 +189,10 @@ const HP4Roblox = () => {
                     </p>
                 </ItemLayout>
                 {
-                    project_samples.map(({path, name}) => (
-                        <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
+                    project_samples.map(({ path, name }) => (
+                        <ItemLayout className={"col-span-6"} key={name}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >

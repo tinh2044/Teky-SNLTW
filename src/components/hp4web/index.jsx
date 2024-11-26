@@ -36,10 +36,10 @@ const HP4Web = () => {
     <section className="w-full py-20">
       <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
         <ItemLayout className="flex-col items-start row-span-2 col-span-full lg:col-span-8 text-accent">
-          <h2 className="w-full text-xl font-bold text-left text-blue-500 capitalize md:text-2xl">
+          <h2 className="heading-course">
             Lập trình Game
           </h2>
-          <div className="text-xs font-light sm:text-sm md:text-base">
+          <div className="knowledge">
             <ul>
               {knowledge_content.map(({ title, content }) => (
                 <li key={title}>
@@ -80,7 +80,7 @@ const HP4Web = () => {
 
         <ItemLayout className={"col-span-full  "}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -99,9 +99,9 @@ const HP4Web = () => {
             Kiến thức thư viện Pygame
           </p>
         </ItemLayout>
-        <ItemLayout className={"col-span-full md:col-span-6 "}>
+        <ItemLayout className={"col-span-full md:col-span-6"}>
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -117,7 +117,7 @@ const HP4Web = () => {
           className={"col-span-full sm:col-span-6 "}
         >
           <Link
-            href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+            href="/"
             target="_blank"
             className="w-full"
           >
@@ -130,7 +130,7 @@ const HP4Web = () => {
           </Link>
         </ItemLayout>
         <ItemLayout
-          className={" col-span-full text-accent"}
+          className={"col-span-full text-accent"}
         >
           <p className="w-full text-2xl font-semibold text-center sm:text-3xl">
             Sản phẩm mẫu

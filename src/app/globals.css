@@ -17,9 +17,36 @@
   .pause {
     animation-play-state: paused;
   }
-   .hover-bn {
+  .knowledge-2 {
+    @apply w-full text-2xl font-semibold text-center sm:text-3xl;
+  }
+  .tool-p {
+    @apply w-full text-sm font-semibold text-left sm:text-5xl;
+  }
+  .tool-icon {
+    @apply object-cover w-10 h-10 lg:w-20 lg:h-20 rounded-xl;
+  }
+  .tool-item {
+    @apply my-2 lg:my-4 col-span-full;
+  }
+  .tool {
+    @apply w-full h-full col-span-full xs:col-span-6 lg:col-span-4 text-sky-50 grid;
+  }
+  .knowledge {
+    @apply text-xs font-light sm:text-sm md:text-base text-accent;
+  }
+  .heading-course {
+    @apply w-full text-xl text-left capitalize md:text-2xl mt-4;
+  }
+  .course-p {
+    @apply mt-5 text-lg lg:text-4xl font-light text-blue-300;
+  }
+  .course-h1 {
+    @apply text-2xl font-bold xs:text-6xl sm:text-7xl lg:text-8xl text-cyan-50 w-full;
+  }
+  .hover-bn {
     @apply hover:shadow-glass-sm hover:bg-opacity-0 hover:backdrop-blur-[0px] hover:text-cyan-100;
-   }
+  }
 
   .custom-bg {
     @apply bg-cyan-200/50 border border-cyan-200 border-solid backdrop-blur-[6px];

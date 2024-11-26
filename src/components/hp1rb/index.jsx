@@ -62,15 +62,12 @@ const HP1Roblox = () => {
         <section className="w-full py-20">
             <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8 text-accent">
                 <ItemLayout
-                    className={
-                        " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-                    }
+                    className={"col-span-full lg:col-span-8 row-span-2 flex-col items-start"}
                 >
-                    <h2 className="w-full mt-4 text-xl text-left capitalize md:text-2xl">
+                    <h2 className="heading-course">
                         LÀM QUEN VỚI THIẾT KẾ VÀ LẬP TRÌNH GAME - OBBY GAME
                     </h2>
-                    <div className="text-xs font-light sm:text-sm md:text-base ">
-
+                    <div className="knowledge">
                         <ul>
                             {knowledge_content.map(({ title, content }) => (
                                 <li key={{ title }}>
@@ -87,43 +84,43 @@ const HP1Roblox = () => {
                 </ItemLayout>
 
                 <div
-                    className={"h-full col-span-full xs:col-span-6 lg:col-span-4 text-sky-50 flex flex-col justify-between"}>
+                    className={"tool"}>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="object-cover w-20 h-20 rounded-xl"
+                            className="tool-icon"
                             src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p ">
                             Roblox Studio
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="object-cover w-20 h-20 rounded-xl"
+                            className="tool-icon"
                             src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p ">
                             Lua
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="object-cover w-20 h-20 rounded-xl"
+                            className="tool-icon"
                             src={"/assets/icons/animation.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p ">
                             Animation
                         </p>
                     </ItemLayout>
@@ -131,17 +128,17 @@ const HP1Roblox = () => {
 
 
                 <ItemLayout
-                    className={" col-span-full text-sky-50"}
+                    className={"col-span-full text-accent"}
                 >
-                    <p className="w-full text-2xl font-semibold text-center sm:text-3xl">
-                        Kiến thức
+                    <p className="knowledge-2">
+                        Kiến thức học phần 1
                     </p>
                 </ItemLayout>
                 {
                     knowledge_images.map((image_path) => (
-                        <ItemLayout className={"col-span-full md:col-span-6 "} key={image_path}>
+                        <ItemLayout className={"col-span-6"} key={image_path}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
@@ -165,11 +162,11 @@ const HP1Roblox = () => {
                     project_samples.map(({ path, name }) => (
                         <ItemLayout className={"col-span-full "} key={name}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
-                                <p className="w-full my-2 text-2xl font-semibold text-center sm:text-xl text-accent">{name}</p>
+                                <p className="w-full my-2 text-xl font-semibold text-center sm:text-2xl text-accent">{name}</p>
                                 <img
 
                                     className="w-full h-auto rounded-xl"

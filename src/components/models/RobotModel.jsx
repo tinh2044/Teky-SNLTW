@@ -8,7 +8,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 
 
 const InteractiveModel = ({ modelPath }) => {
-    const model = useGLTF("/models/Warrior_Robot_2.glb");
+    const model = useGLTF(modelPath);
 
     const [hovered, setHovered] = useState(false);  // State để theo dõi hover
     const [clicked, setClicked] = useState(false);  // State để theo dõi click
@@ -66,7 +66,7 @@ const RobotModel = ({ modelPath }) => {
             <spotLight position={[10, 10, 10]} angle={0.15} intensity={1} castShadow />
 
             <Suspense fallback={null}>
-                <InteractiveModel modelPath={modelPath} />
+                <InteractiveModel modelPath={"/models/Warrior_Robot_2.glb"} />
             </Suspense>
 
             <OrbitControls />  {/* Cho phép điều khiển mô hình với chuột */}

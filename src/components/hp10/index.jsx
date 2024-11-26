@@ -77,8 +77,8 @@ const HP10 = () => {
                     <div className="text-xs font-light sm:text-sm md:text-base ">
 
                         <ul>
-                            {knowledge_content.map(({title, content}) => (
-                                <li key={{title}}>
+                            {knowledge_content.map(({ title, content }) => (
+                                <li key={{ title }}>
                                     <span className="font-semibold text-accent">{title}:</span>
                                     <ul className="pl-4">
                                         {content.map((item, index) => (
@@ -159,7 +159,7 @@ const HP10 = () => {
                     knowledge_images.map((image_path) => (
                         <ItemLayout className={"col-span-full md:col-span-6 "} key={image_path}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
@@ -180,10 +180,10 @@ const HP10 = () => {
                     </p>
                 </ItemLayout>
                 {
-                    project_samples.map(({path, name}) => (
+                    project_samples.map(({ path, name }) => (
                         <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >

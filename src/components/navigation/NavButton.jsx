@@ -57,7 +57,7 @@ const NavButton = ({
   return (
     <ResponsiveComponent>
       {({ size }) => {
-        return size && size >= 480 ? (
+        return size && size >= 640 ? (
           <div
             className="absolute cursor-pointer z-50 "
             style={{ transform: `translate(${x}, ${y})` }}
@@ -66,9 +66,7 @@ const NavButton = ({
               variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
-              className="text-cyan-800 rounded-full flex items-center justify-center hover-bn
-        custom-bg
-        "
+              className="text-cyan-800 rounded-full flex items-center justify-center hover-bn custom-bg"
               aria-label={label}
               name={label}
               prefetch={false}
@@ -91,17 +89,15 @@ const NavButton = ({
               variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
-              className="text-sky  rounded-full flex items-center justify-center
-        custom-bg
-        "
+              className="text-cyan-800 rounded-full flex items-center justify-center hover-bn custom-bg"
               aria-label={label}
               name={label}
               prefetch={false}
               scroll={false}
             >
-              <span className="relative  w-10 h-10  xs:w-14 xs:h-14 p-2.5 xs:p-4 hover:text-sky">
-                {getIcon(icon)}
 
+              <span className="relative w-16 h-16 p-2  xs:w-14 xs:h-14 p-2.5 xs:p-4 hover:text-sky text-center">
+                {label}
                 <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
 
                 <span
