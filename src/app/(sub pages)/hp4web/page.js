@@ -2,7 +2,7 @@ import Image from "next/image";
 import bg from "../../../../public/background/bg_11.png";
 import RenderModel from "@/components/RenderModel";
 import dynamic from "next/dynamic";
-import HP4 from "@/components/hp4";
+import HP4Web from "@/components/hp4web";
 const BookModel = dynamic(() => import("@/components/models/BookModel"), {
   ssr: false,
 });
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
 
-      <HP4 />
+      <HP4Web />
     </>
   );
 }

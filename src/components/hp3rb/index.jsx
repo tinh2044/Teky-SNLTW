@@ -7,15 +7,15 @@ const knowledge_content = [
     {
         title: "Science (Khoa học)",
         content: [
-                "Hiểu cách các hiệu ứng như ánh sáng, hạt (particles), và sương mù hoạt động, có thể liên quan đến mô phỏng các hiện tượng vật lý tự nhiên trong game",
-                "Ứng dụng các khái niệm khoa học về ánh sáng và không gian để tạo môi trường huyền ảo (liên quan đến vật lý và khí quyển)"
+            "Hiểu cách các hiệu ứng như ánh sáng, hạt (particles), và sương mù hoạt động, có thể liên quan đến mô phỏng các hiện tượng vật lý tự nhiên trong game",
+            "Ứng dụng các khái niệm khoa học về ánh sáng và không gian để tạo môi trường huyền ảo (liên quan đến vật lý và khí quyển)"
         ]
 
     },
     {
         title: "Technology (Công nghệ)",
         content: [
-             "Sử dụng ScreenGui, Frame, TextLabel, ImageLabel để xây dựng giao diện",
+            "Sử dụng ScreenGui, Frame, TextLabel, ImageLabel để xây dựng giao diện",
             "Tinh chỉnh Terrain bằng TerrainEditor",
             "Tạo NPC và quản lý thông tin qua Arra",
             "Sử dụng HumanoidDescription để điều chỉnh ngoại hình và tặng quà ngẫu nhiên",
@@ -39,7 +39,7 @@ const knowledge_content = [
             "Thiết kế hoạt ảnh sống động cho nhân vật dựa trên các nguyên tắc Animation",
             "Tạo hiệu ứng đặc biệt thu hút qua việc điều chỉnh Particle Emitters"
 
-            ]
+        ]
 
     },
     {
@@ -85,12 +85,12 @@ const HP3Roblox = () => {
                     <h2 className="w-full text-xl text-left capitalize md:text-2xl mt-4">
                         SIÊU NHÂN LÀM GAME - LEVEL 3
                     </h2>
-                    <div className="text-xs font-light sm:text-sm md:text-base ">
+                    <div className="text-xs font-light sm:text-sm md:text-base text-accent">
 
                         <ul>
-                            {knowledge_content.map(({title, content}) => (
-                                <li key={{title}}>
-                                    <span className="font-semibold text-sky-50">{title}:</span>
+                            {knowledge_content.map(({ title, content }) => (
+                                <li key={{ title }}>
+                                    <span className="font-semibold text-foreground">{title}:</span>
                                     <ul className="pl-4">
                                         {content.map((item, index) => (
                                             <li key={index}>- {item}.</li>
@@ -178,7 +178,7 @@ const HP3Roblox = () => {
                     </p>
                 </ItemLayout>
                 {
-                    project_samples.map(({path, name}) => (
+                    project_samples.map(({ path, name }) => (
                         <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
                             <Link
                                 href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"

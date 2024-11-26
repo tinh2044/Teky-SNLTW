@@ -38,7 +38,7 @@ const knowledge_content = [
         content: [
             "Obby Game (Vượt chướng ngại vật) – Trò chơi phổ biến trong Roblox yêu cầu người chơi vượt qua các chướng ngại vật để đạt được mục tiêu."
 
-            ]
+        ]
 
     },
 ]
@@ -52,29 +52,29 @@ const knowledge_images = [
 ]
 const project_samples = [
     {
-    name: "Vượt chướng ngại vật (Obby Game)",
+        name: "Vượt chướng ngại vật (Obby Game)",
         path: "/assets/images/hp1roblox/obby.jpg",
     }
-    
+
 ]
 const HP1Roblox = () => {
     return (
         <section className="w-full py-20">
-            <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8">
+            <div className="grid w-full grid-cols-12 gap-4 xs:gap-6 md:gap-8 text-accent">
                 <ItemLayout
                     className={
                         " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
                     }
                 >
                     <h2 className="w-full mt-4 text-xl text-left capitalize md:text-2xl">
-                    LÀM QUEN VỚI THIẾT KẾ VÀ LẬP TRÌNH GAME - OBBY GAME
+                        LÀM QUEN VỚI THIẾT KẾ VÀ LẬP TRÌNH GAME - OBBY GAME
                     </h2>
                     <div className="text-xs font-light sm:text-sm md:text-base ">
 
                         <ul>
-                            {knowledge_content.map(({title, content}) => (
-                                <li key={{title}}>
-                                    <span className="font-semibold text-sky-50">{title}:</span>
+                            {knowledge_content.map(({ title, content }) => (
+                                <li key={{ title }}>
+                                    <span className="font-semibold text-foreground">{title}:</span>
                                     <ul className="pl-4">
                                         {content.map((item, index) => (
                                             <li key={index}>- {item}.</li>
@@ -162,7 +162,7 @@ const HP1Roblox = () => {
                     </p>
                 </ItemLayout>
                 {
-                    project_samples.map(({path, name}) => (
+                    project_samples.map(({ path, name }) => (
                         <ItemLayout className={"col-span-full "} key={name}>
                             <Link
                                 href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"

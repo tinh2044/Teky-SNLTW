@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 
 const BookModel = React.memo(function BookModel(props) {
   // Use React.memo for performance optimization
-  const { nodes, materials } = useGLTF("/models/book.glb");
+  const { nodes, materials } = useGLTF("/models/book_v2.glb");
 
   const modelRef = useRef();
 
@@ -38,4 +38,4 @@ const BookModel = React.memo(function BookModel(props) {
 });
 
 export default BookModel;
-useGLTF.preload("/models/book.glb");
+useGLTF.preload("/models/book_v2.glb");

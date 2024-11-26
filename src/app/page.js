@@ -1,11 +1,10 @@
 import Image from "next/image";
 import bg from "../../public/background/testing_1.png";
 import RenderModel from "@/components/RenderModel";
-// import Wizard from "@/components/models/Wizard";
 import Navigation from "@/components/navigation";
 
 import dynamic from "next/dynamic";
-import Robot, { RobotCanvas } from "@/components/models/RobotModel";
+import RobotModel from "@/components/models/RobotModel";
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
   ssr: false,
 });
@@ -24,10 +23,7 @@ export default function Home() {
 
       <div className="w-full h-screen">
         <Navigation />
-        <RenderModel>
-          {/* <Wizard /> */}
-          <RobotCanvas />
-        </RenderModel>
+        <RobotModel />
       </div>
     </main>
   );

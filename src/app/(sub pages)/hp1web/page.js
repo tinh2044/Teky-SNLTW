@@ -31,7 +31,7 @@ export default function Home() {
       <div className="relative flex flex-col items-center justify-center w-full h-screen">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
           <h1 className="text-5xl font-bold xs:text-6xl sm:text-7xl lg:text-8xl text-sky-50">
-          Học phần 1
+            Học phần 1
           </h1>
           <p className="mt-5 text-4xl font-light text-blue-300">
             Siêu nhân lập trình web
