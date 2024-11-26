@@ -131,7 +131,7 @@ const HP3Web = () => {
         </ItemLayout>
 
         {knowledge_images.map((image_path) => (
-          <ItemLayout className="col-span-6" key={image_path}>
+          <ItemLayout className={"col-span-full md:col-span-6"} key={image_path}>
             <Link
               href="/"
               target="_blank"

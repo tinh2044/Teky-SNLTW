@@ -111,7 +111,7 @@ const HP4Roblox = () => {
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Roblox Studio
                         </p>
                     </ItemLayout>
@@ -137,7 +137,7 @@ const HP4Roblox = () => {
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Client
                         </p>
                     </ItemLayout>
@@ -150,7 +150,7 @@ const HP4Roblox = () => {
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Server
                         </p>
                     </ItemLayout>
@@ -166,7 +166,7 @@ const HP4Roblox = () => {
                 </ItemLayout>
                 {
                     knowledge_images.map((image_path) => (
-                        <ItemLayout className={"col-span-6 "} key={image_path}>
+                        <ItemLayout className={"col-span-full md:col-span-6"} key={image_path}>
                             <Link
                                 href="/"
                                 target="_blank"
@@ -190,7 +190,7 @@ const HP4Roblox = () => {
                 </ItemLayout>
                 {
                     project_samples.map(({ path, name }) => (
-                        <ItemLayout className={"col-span-6"} key={name}>
+                        <ItemLayout className={"col-span-full md:col-span-6"} key={name}>
                             <Link
                                 href="/"
                                 target="_blank"

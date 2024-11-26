@@ -100,43 +100,43 @@ const HP3Roblox = () => {
                     </div>
                 </ItemLayout>
                 <div
-                    className={"h-full col-span-full xs:col-span-6 lg:col-span-4 text-sky-50 flex flex-col justify-between"}>
+                    className={"tool"}>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/rb_studio.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Roblox Studio
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/lua.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Lua
                         </p>
                     </ItemLayout>
                     <ItemLayout
-                        className={"my-4"}
+                        className={"tool-item"}
                     >
                         <img
-                            className="w-20 h-20 rounded-xl object-cover"
+                            className="tool-icon"
                             src={"/assets/icons/animation.png"}
                             alt="KienThuc"
                             loading="lazy"
                         />
-                        <p className="w-full text-2xl font-semibold text-left sm:text-5xl">
+                        <p className="tool-p">
                             Animation
                         </p>
                     </ItemLayout>
@@ -154,7 +154,7 @@ const HP3Roblox = () => {
                     knowledge_images.map((image_path) => (
                         <ItemLayout className={"col-span-full md:col-span-6 "} key={image_path}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
@@ -178,7 +178,7 @@ const HP3Roblox = () => {
                     project_samples.map(({ path, name }) => (
                         <ItemLayout className={"col-span-full md:col-span-6 "} key={name}>
                             <Link
-                                href="https://teky.edu.vn/v2/khoa-hoc/sieu-nhan-lap-trinh-web-870"
+                                href="/"
                                 target="_blank"
                                 className="w-full"
                             >
