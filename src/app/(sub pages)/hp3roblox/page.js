@@ -4,7 +4,7 @@ import RenderModel from "@/components/RenderModel";
 
 import dynamic from "next/dynamic";
 import HP3Roblox from "@/components/hp3rb";
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+const BookModel = dynamic(() => import("@/components/models/BookModel"), {
   ssr: false,
 });
 
@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="absolute left-0 z-10 w-full -translate-y-1/2 h-3/5 xs:h-3/4 sm:h-screen top-1/2">
         <RenderModel>
-          <HatModel />
+          <BookModel />
         </RenderModel>
       </div>
 

@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="absolute left-0 z-10 w-full -translate-y-1/2 h-3/5 xs:h-3/4 sm:h-screen top-1/2">
         <RenderModel>
-          {/* <BookModel /> */}
+          <BookModel />
         </RenderModel>
       </div>
 

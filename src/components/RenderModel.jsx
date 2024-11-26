@@ -8,7 +8,7 @@ import { OrbitControls, Environment, } from "@react-three/drei";
 const RenderModel = ({ children, className }) => {
   return (
     <Canvas
-      className="absolute -z-10 hidden lg:block"
+      className="absolute -z-10 hidden md:block"
       style={{ height: '100vh', cursor: "pointer" }}
       camera={{ position: [0, 0, 5], fov: 50 }}
     >
