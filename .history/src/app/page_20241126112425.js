@@ -1,9 +1,13 @@
 import Image from "next/image";
 import bg from "../../public/background/testing_1.png";
+import RenderModel from "@/components/RenderModel";
 import Navigation from "@/components/navigation";
 
 import dynamic from "next/dynamic";
 import RobotModel from "@/components/models/RobotModel";
+const Wizard = dynamic(() => import("@/components/models/Wizard"), {
+  ssr: false,
+});
 // const renderer = await ReactThreeTestRenderer.create(<mesh />)
 export default function Home() {
   return (
