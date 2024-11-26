@@ -20,7 +20,7 @@ const FireFliesBackground = () => {
       ]);
     };
 
-    const interval = setInterval(addFireflyPeriodically, 1000);
+    const interval = setInterval(addFireflyPeriodically, 500);
 
     return () => clearInterval(interval);
   }, []);
@@ -31,7 +31,7 @@ const FireFliesBackground = () => {
         return (
           <div
             key={firefly.id}
-            className="absolute roudned-full w-[10px] h-[10px] bg-firefly-radial"
+            className="absolute roudned-full w-[20px] h-[20px] bg-firefly-radial"
             style={{
               top: firefly.top,
               left: firefly.left,
